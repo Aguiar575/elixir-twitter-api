@@ -6,8 +6,8 @@ defmodule TweetApi.TweetServer do
     GenServer.start_link(__MODULE__, :ok, name: :tweet_server)
   end
 
-  @spec init :: {:ok, %{}}
-  def init() do
+  @spec init(:ok) :: {:ok, %{}}
+  def init(:ok) do
     {:ok, %{}}
   end
 
