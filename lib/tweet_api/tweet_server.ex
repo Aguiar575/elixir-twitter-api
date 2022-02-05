@@ -1,8 +1,8 @@
 defmodule TweetApi.TweetServer do
   use GenServer
 
-  @spec start_link :: :ignore | {:error, any} | {:ok, pid}
-  def start_link() do
+  @spec start_link(any) :: :ignore | {:error, any} | {:ok, pid}
+  def start_link(_) do
     GenServer.start_link(__MODULE__, :ok, name: :tweet_server)
   end
 
