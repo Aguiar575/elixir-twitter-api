@@ -30,7 +30,8 @@ defmodule TweetApi.MixProject do
     [
       {:credo, "~> 1.2"},
       {:quantum, "~> 3.0"},
-      {:extwitter, "~> 0.13.0"}
+      {:extwitter, "~> 0.13.0"},
+      {:mock, "~> 0.3.0", only: :test}
     ]
   end
 end
